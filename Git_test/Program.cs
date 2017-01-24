@@ -11,6 +11,14 @@ namespace Git_test
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!!");
+            Console.WriteLine("Guess a number!");
+            int number = Console.Read();
+            while(number != 42)
+            {
+                Console.WriteLine("Try again :(");
+                number = Console.Read();
+            }
+           
         }
     }
 }
