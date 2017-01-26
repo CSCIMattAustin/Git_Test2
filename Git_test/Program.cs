@@ -10,7 +10,7 @@ namespace Git_test
     {
         static void Main(string[] args)
         {
-            Random r = new Random(new System.DateTime().Millisecond);
+            Random r = new Random();
             Console.WriteLine("Hello, World!!");
             Console.WriteLine("Enter the Starting number please.");
 
@@ -21,11 +21,11 @@ namespace Git_test
             Console.WriteLine("Enter the ending number please.");
 
             string temp_second = Console.ReadLine();
-            int second_num = Convert.ToInt32(temp_first);
+            int second_num = Convert.ToInt32(temp_second);
 
             Console.WriteLine(second_num);
 
-            if(first_num > second_num)
+            if (first_num > second_num)
             {
                 int temp;
                 temp = first_num;
@@ -33,7 +33,8 @@ namespace Git_test
                 second_num = temp;
             }
 
-            int correct_number = r.Next(first_num, second_num);
+            int correct_number;
+            correct_number = r.Next(first_num, second_num);
 
             Console.WriteLine("Guess a number!");
 

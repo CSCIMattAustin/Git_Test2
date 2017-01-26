@@ -21,7 +21,7 @@ namespace Git_test
             Console.WriteLine("Enter the ending number please.");
 
             string temp_second = Console.ReadLine();
-            int second_num = Convert.ToInt32(temp_first);
+            int second_num = Convert.ToInt32(temp_second);
 
             Console.WriteLine(second_num);
 
@@ -34,11 +34,11 @@ namespace Git_test
             }
 
             int correct_number = r.Next(first_num, second_num);
-            Console.WriteLine("{0} is the random number", correct_number);
 
             Console.WriteLine("Guess a number!");
 
             string first_guess = Console.ReadLine();
+
             int number = Convert.ToInt32(first_guess);
 
             while (number != correct_number)
